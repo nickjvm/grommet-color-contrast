@@ -9,8 +9,5 @@ $ gulp dev
 
 Browser will open `localhost:8014`
 
-Chrome on OSX:
-![Chrome](http://imgur.com/5DFNYN6.png "Chrome")
-
 Firefox on OSX:
 ![Firefox](http://i.imgur.com/KVbyeOU.png "Firefox")
