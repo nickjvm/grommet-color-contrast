@@ -5,8 +5,8 @@ To test, run `gulp dev`.
 
 Browser will open `localhost:8014`
 
-Firefox on OSX:
-![Firefox](http://imgur.com/5DFNYN6.png "Firefox")
-
 Chrome on OSX:
-![Chrome](http://i.imgur.com/KVbyeOU.png "Chrome")
+![Chrome](http://imgur.com/5DFNYN6.png "Chrome")
+
+Firefox on OSX:
+![Firefox](http://i.imgur.com/KVbyeOU.png "Firefox")
