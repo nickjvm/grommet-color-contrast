@@ -57,7 +57,7 @@
     "eslint-plugin-react": "^6.6.0",
     "extend-tape": "^1.1.0",
     "glob": "^7.0.0",
-    "grommet": "1.0.1",
+    "grommet": "latest",
     "grommet-index": "1.0.1",
     "grommet-templates": "0.2.0",
     "grommet-toolbox": "1.0.5",
