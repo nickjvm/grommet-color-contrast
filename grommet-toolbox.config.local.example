@@ -1,0 +1,56 @@
+/**
+ * !!!!! DO NOT DELETE THIS FILE !!!!!
+ * You will be publicly shamed if you do.
+ * Instead, duplicate this file and rename it.
+ *
+ * Personal Grommet Toolbox Configurations
+ *
+ * This is an example file!
+ * To extend default grommet-toolbox config, copy (cp) this file
+ * and rename from *.example to *.js
+ *
+ * You can use this file to override any settings defined in the
+ * default grommet-toolbox.config.js file.
+ *
+ * Feel free to override environment variables, add additional
+ * Webpack plugins, change proxy locations, etc. This is your
+ * personal config - it'll never be included in source control.
+ */
+
+// const path = require('path');
+const proxy = 'localhost:8114'; // DEFAULT
+// const proxy = '16.71.84.2';
+
+module.exports = {
+  proxy,
+  env: {
+    'process.env': {
+      CUSTOM_ENV_VAR: JSON.stringify('custom')
+    }
+  },
+  devServer: {
+    // quiet: true
+  },
+  webpack: {
+    resolve: {
+      /**
+       * Use local versions of grommet or grommet-index within ui bundle!
+       * !!! React alias is required to resolve differing versions between ui, grommet & grommet-index !!!
+       * You will need to fork/clone grommet or grommet-index repo's from github, and change the paths below
+       * to match your local environment locations.
+       *
+       * run npm install for grommet repo (fork)
+       * gulp dist on the fork or just gulp generate-index-icon
+       *
+       *
+      */
+      alias: {
+        // 'react': path.join(__dirname, 'node_modules', 'react'), //
+        // 'grommet-index/scss': path.resolve(__dirname, '../grommet-workspace/grommet-index/src/scss'),
+        // 'grommet-index': path.resolve(__dirname, '../grommet-workspace/grommet-index/src/js'),
+        // 'grommet/scss': path.resolve(__dirname, '../grommet-workspace/grommet/src/scss'),
+        // 'grommet': path.resolve(__dirname, '../grommet-workspace/grommet/src/js')
+      }
+    }
+  }
+};

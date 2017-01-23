@@ -1,0 +1,6 @@
+coverage/*
+node_modules/*
+server/templates/assets/*
+grommet-toolbox.config.local.js
+lib/*
+server/check-swagger/*
