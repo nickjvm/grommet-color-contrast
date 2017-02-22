@@ -1,6 +1,5 @@
 import React from 'react';
 
-import App from 'grommet/components/App';
 import Article from 'grommet/components/Article';
 import Box from 'grommet/components/Box';
 import Split from 'grommet/components/Split';
@@ -15,85 +14,83 @@ import LinkPrevious from 'grommet/components/icons/base/LinkPrevious';
 
 export default function SampleComponent() {
   return (
-    <App centered={false}>
-      <Split
-        flex="left"
-        priority="left"
-        separator
-      >
-        <Article pad={{ horizontal: 'medium' }}>
-          <Header pad={{ vertical: 'small' }}>
-            <Title>Some amazing content</Title>
-          </Header>
-        </Article>
+    <Split
+      flex="left"
+      priority="left"
+      separator
+    >
+      <Article pad={{ horizontal: 'medium' }}>
+        <Header pad={{ vertical: 'small' }}>
+          <Title>Some amazing content</Title>
+        </Header>
+      </Article>
 
-        <Sidebar size="medium" colorIndex="light-2">
-          <Header pad="small">
-            <Title>My content menu</Title>
-          </Header>
-          <Menu pad={{ horizontal: 'large' }} align="center">
-            <Box
-              pad={{ vertical: 'small' }}
-              size="large"
-              align="start"
-              justify="start"
-              separator="bottom"
-            >
-              <Button
-                type="button"
-                plain
-                icon={<EditIcon />}
-                label="Button A"
-                onClick={() => {}}
-              />
-              <Button
-                type="button"
-                icon={<LinkPrevious />}
-                plain
-                label="Button B"
-                onClick={() => {}}
-              />
-              <Button
-                type="button"
-                icon={<AddIcon />}
-                plain
-                label="Button C"
-                onClick={() => {}}
-              />
-            </Box>
+      <Sidebar size="medium" colorIndex="light-2">
+        <Header pad="small">
+          <Title>My content menu</Title>
+        </Header>
+        <Menu pad={{ horizontal: 'large' }} align="center">
+          <Box
+            pad={{ vertical: 'small' }}
+            size="large"
+            align="start"
+            justify="start"
+            separator="bottom"
+          >
+            <Button
+              type="button"
+              plain
+              icon={<EditIcon />}
+              label="Button A"
+              onClick={() => {}}
+            />
+            <Button
+              type="button"
+              icon={<LinkPrevious />}
+              plain
+              label="Button B"
+              onClick={() => {}}
+            />
+            <Button
+              type="button"
+              icon={<AddIcon />}
+              plain
+              label="Button C"
+              onClick={() => {}}
+            />
+          </Box>
 
-            <Box
-              pad={{ vertical: 'small' }}
-              size="large"
-              align="start"
-              justify="start"
-              separator="bottom"
-            >
-              <Button
-                type="button"
-                plain
-                icon={<EditIcon />}
-                label="Button 1"
-                onClick={() => {}}
-              />
-              <Button
-                type="button"
-                plain
-                icon={<LinkPrevious />}
-                label="Button 2"
-                onClick={() => {}}
-              />
-              <Button
-                type="button"
-                icon={<AddIcon />}
-                plain
-                label="Button 3"
-                onClick={() => {}}
-              />
-            </Box>
-          </Menu>
-        </Sidebar>
-      </Split>
-    </App>
+          <Box
+            pad={{ vertical: 'small' }}
+            size="large"
+            align="start"
+            justify="start"
+            separator="bottom"
+          >
+            <Button
+              type="button"
+              plain
+              icon={<EditIcon />}
+              label="Button 1"
+              onClick={() => {}}
+            />
+            <Button
+              type="button"
+              plain
+              icon={<LinkPrevious />}
+              label="Button 2"
+              onClick={() => {}}
+            />
+            <Button
+              type="button"
+              icon={<AddIcon />}
+              plain
+              label="Button 3"
+              onClick={() => {}}
+            />
+          </Box>
+        </Menu>
+      </Sidebar>
+    </Split>
   );
 }
